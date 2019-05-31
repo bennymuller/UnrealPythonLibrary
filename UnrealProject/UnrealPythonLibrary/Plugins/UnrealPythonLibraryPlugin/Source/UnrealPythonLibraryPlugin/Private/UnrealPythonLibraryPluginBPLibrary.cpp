@@ -14,3 +14,7 @@ float UUnrealPythonLibraryPluginBPLibrary::UnrealPythonLibraryPluginSampleFuncti
 	return -1;
 }
 
+void UUnrealPythonLibraryPluginBPLibrary::ExecutePythonScript(FString PythonScript)
+{
+    FPythonScriptPlugin::Get() -> ExecPythonCommand(*PythonScript);
+}
