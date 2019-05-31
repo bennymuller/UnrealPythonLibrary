@@ -29,4 +29,7 @@ class UUnrealPythonLibraryPluginBPLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Execute Sample function", Keywords = "UnrealPythonLibraryPlugin sample test testing"), Category = "UnrealPythonLibraryPluginTesting")
 	static float UnrealPythonLibraryPluginSampleFunction(float Param);
+	
+	UFUNCTION(BlueprintCallable, Category = "Unreal Python")
+        static void ExecutePythonScript(FString PythonScript);
 };
